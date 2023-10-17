@@ -36,6 +36,7 @@
           ps.fastapi ps.uvicorn
         ]);
       in {
+        packages.default = py;
         devShells.default = pkgs.mkShell {
           name = "housedocs-env";
           buildInputs = [
